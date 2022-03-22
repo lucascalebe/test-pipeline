@@ -11,6 +11,7 @@ on:
 
 jobs:
   build-and-tests:
+    name: Build And Tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -26,7 +27,7 @@ jobs:
       run: mvn test
 
   sonarqube:
-    name: Build
+    name: SonarQube
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
